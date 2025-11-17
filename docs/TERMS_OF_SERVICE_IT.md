@@ -94,8 +94,7 @@ Questi Termini di Servizio, insieme all'EULA standard di Apple e alla nostra Inf
 
 ## Contatti
 
-Per domande riguardo questi Termini di Servizio, puoi contattarci:
-- Email: [inserisci email di contatto]
+Per domande riguardo questi Termini di Servizio, puoi contattarci dall'app.
 
 ---
 
