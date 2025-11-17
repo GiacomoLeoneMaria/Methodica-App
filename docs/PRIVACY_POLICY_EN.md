@@ -52,8 +52,7 @@ We may update this privacy policy periodically. We will notify you of any change
 
 ## Contact
 
-For questions or concerns regarding this privacy policy, you can contact us:
-- Email: [insert contact email]
+For questions or concerns regarding this privacy policy, you can contact us from the app
 
 ## Apple App Store Compliance
 
