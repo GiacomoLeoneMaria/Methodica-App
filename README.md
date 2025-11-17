@@ -26,6 +26,20 @@
 
 ---
 
+## Perché Methodica? / Why Methodica?
+
+**🇮🇹 Italiano:**  
+Ho creato Methodica perché non riuscivo a trovare un'app per la gestione degli appuntamenti e della produttività che funzionasse davvero per me. Dopo aver provato numerose soluzioni esistenti, ho deciso di costruire qualcosa che rispondesse esattamente alle mie esigenze: un sistema completo che integrasse calendario, task management e bilanciamento delle priorità di vita in un'unica interfaccia intuitiva.
+
+Se anche tu la trovi utile, fantastico! Se invece trovi qualcosa che non funziona come dovrebbe o hai idee su come migliorarla, ti invito ad aprire un'issue. Questo progetto nasce dalla community e per la community.
+
+**🇬🇧 English:**  
+I created Methodica because I couldn't find an appointment and productivity management app that truly worked for me. After trying numerous existing solutions, I decided to build something that met exactly my needs: a complete system that integrates calendar, task management, and life priority balancing in a single intuitive interface.
+
+If you find it useful too, that's great! If instead you find something that doesn't work as it should or have ideas on how to improve it, please open an issue. This project comes from the community and is for the community.
+
+---
+
 ## Panoramica / Overview
 
 **🇮🇹 Italiano:**  
