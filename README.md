@@ -25,7 +25,9 @@
 | **Android** | 🔄 Under review on Google Play Store / In revisione su Google Play Store |
 
 ---
-
+<p align="center">
+  <img src="assets/icon.png" alt="Methodica icona" width="400"/>
+</p>
 ## Perché Methodica? / Why Methodica?
 
 **🇮🇹 Italiano:**  
