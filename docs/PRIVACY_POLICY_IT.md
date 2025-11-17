@@ -52,8 +52,7 @@ Potremmo aggiornare questa informativa sulla privacy periodicamente. Ti informer
 
 ## Contatti
 
-Per domande o dubbi riguardo questa informativa sulla privacy, puoi contattarci:
-- Email: [inserisci email di contatto]
+Per domande o dubbi riguardo questa informativa sulla privacy, puoi contattarci dall'app.
 
 ## Conformità con Apple App Store
 
