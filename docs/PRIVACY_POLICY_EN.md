@@ -52,7 +52,7 @@ We may update this privacy policy periodically. We will notify you of any change
 
 ## Contact
 
-For questions or concerns regarding this privacy policy, you can contact us from the app
+If you have any questions or concerns about this privacy policy, you can contact us from within the app or by opening an issue on GitHub.
 
 ## Apple App Store Compliance
 
