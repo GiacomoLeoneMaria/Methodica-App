@@ -94,7 +94,7 @@ Questi Termini di Servizio, insieme all'EULA standard di Apple e alla nostra Inf
 
 ## Contatti
 
-Per domande riguardo questi Termini di Servizio, puoi contattarci dall'app.
+Per domande o dubbi riguardo questa informativa sulla privacy, puoi contattarci dall'app o aprendo una Issue su GitHub.
 
 ---
 
