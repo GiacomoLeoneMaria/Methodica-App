@@ -110,6 +110,26 @@ Methodica is a complete mobile application for personal productivity management,
 
 ---
 
+### Backup e Ripristino Dati / Data Backup & Restore
+
+**🇮🇹 Italiano:**
+- **Export Dati**: Esporta tutti i tuoi dati (eventi, task, aree di priorità) in un file JSON con timestamp
+- **Import Dati**: Importa dati da un file di backup precedentemente esportato
+- **Anteprima Import**: Prima di importare, visualizza un riepilogo del contenuto del backup (numero di eventi, task e aree)
+- **Validazione Automatica**: Il sistema valida automaticamente l'integrità del file di backup prima dell'importazione
+- **Schedulazione Notifiche**: Durante l'importazione, puoi scegliere se attivare le notifiche per gli eventi e task importati
+- **Condivisione Cross-Device**: Utilizza il menu di condivisione nativo per salvare il backup su cloud, inviarlo via email o trasferirlo su altri dispositivi
+
+**🇬🇧 English:**
+- **Data Export**: Export all your data (events, tasks, priority areas) to a timestamped JSON file
+- **Data Import**: Import data from a previously exported backup file
+- **Import Preview**: Before importing, view a summary of the backup content (number of events, tasks, and areas)
+- **Automatic Validation**: The system automatically validates the integrity of the backup file before import
+- **Notification Scheduling**: During import, you can choose whether to enable notifications for imported events and tasks
+- **Cross-Device Sharing**: Use the native share menu to save the backup to cloud, send it via email, or transfer it to other devices
+
+---
+
 ### Dashboard (Schermata Principale / Home Screen)
 
 **🇮🇹 Italiano:**
@@ -129,11 +149,15 @@ Methodica is a complete mobile application for personal productivity management,
 **🇮🇹 Italiano:**
 - **Tema Dark/Light/Auto**: L'app supporta temi multipli che possono anche adattarsi automaticamente alle impostazioni di sistema
 - **Gestione Notifiche**: Abilita o disabilita globalmente le notifiche dall'app
+- **Export/Import Dati**: Esporta tutti i tuoi dati (eventi, task, aree di priorità) in un file JSON per backup e reimportali su un altro dispositivo o dopo una reinstallazione
+- **Schedulazione Intelligente**: Durante l'importazione, l'app chiede automaticamente se attivare le notifiche per eventi e task importati
 - **Gestione Dati**: Funzionalità per eliminare tutti i dati, o solo eventi/task, per ricominciare da zero
 
 **🇬🇧 English:**
 - **Dark/Light/Auto Theme**: The app supports multiple themes that can also automatically adapt to system settings
 - **Notification Management**: Globally enable or disable notifications from the app
+- **Data Export/Import**: Export all your data (events, tasks, priority areas) to a JSON file for backup and re-import them on another device or after a reinstallation
+- **Smart Scheduling**: During import, the app automatically asks whether to enable notifications for imported events and tasks
 - **Data Management**: Functionality to delete all data, or just events/tasks, to start over
 
 ---
@@ -143,10 +167,12 @@ Methodica is a complete mobile application for personal productivity management,
 **🇮🇹 Italiano:**
 - **Supporto Multi-lingua**: L'interfaccia è tradotta in più lingue (Italiano, Inglese, Francese, Tedesco, Spagnolo) e si adatta automaticamente alla lingua del dispositivo
 - **Localizzazione Date**: Date e orari sono formattati correttamente in base alla lingua rilevata
+- **Notifiche Localizzate**: I messaggi delle notifiche (eventi e task) vengono visualizzati nella lingua del dispositivo, con fallback automatico all'inglese per lingue non supportate
 
 **🇬🇧 English:**
 - **Multi-language Support**: The interface is translated into multiple languages (Italian, English, French, German, Spanish) and automatically adapts to the device's language
 - **Date Localization**: Dates and times are formatted correctly based on the detected language
+- **Localized Notifications**: Notification messages (events and tasks) are displayed in the device's language, with automatic fallback to English for unsupported languages
 
 ---
 
@@ -230,11 +256,15 @@ Methodica is a complete mobile application for personal productivity management,
 - **`expo-notifications`**: Per la gestione completa delle notifiche locali (richiesta permessi, scheduling, cancellazione)
 - **`expo-splash-screen`**: Per il controllo programmatico della splash screen
 - **`expo-localization`**: Per rilevare la lingua e le impostazioni regionali del dispositivo
+- **`expo-file-system/legacy`**: Per la gestione dei file (lettura, scrittura) utilizzato per l'export/import dei dati
+- **React Native Share API**: Per condividere i file di backup tramite il menu di condivisione nativo del sistema operativo
 
 **🇬🇧 English:**
 - **`expo-notifications`**: For complete local notification management (permission requests, scheduling, cancellation)
 - **`expo-splash-screen`**: For programmatic control of the splash screen
 - **`expo-localization`**: To detect the device's language and regional settings
+- **`expo-file-system/legacy`**: For file management (reading, writing) used for data export/import
+- **React Native Share API**: To share backup files through the operating system's native share menu
 
 ---
 
