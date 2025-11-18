@@ -94,7 +94,7 @@ These Terms of Service, together with Apple's standard EULA and our Privacy Poli
 
 ## Contact
 
-For questions regarding these Terms of Service, you can contact us from the app.
+If you have any questions or concerns about Terms of Service, you can contact us from within the app or by opening an issue on GitHub.
 
 ---
 
