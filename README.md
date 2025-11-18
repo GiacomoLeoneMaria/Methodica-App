@@ -260,9 +260,9 @@ Methodica is a complete mobile application for personal productivity management,
 
 ## Contatti / Contact
 
-**🇮🇹** Per domande o supporto, contatta: [giacomoleonemariadev@gmail.com](mailto:giacomoleonemariadev@gmail.com)
+**🇮🇹** Per domande o supporto, contatta: [giacomoleonemariadev@gmail.com](mailto:giacomoleonemariadev@gmail.com), o apri una Issue su GitHub.
 
-**🇬🇧** For questions or support, contact: [giacomoleonemariadev@gmail.com](mailto:giacomoleonemariadev@gmail.com)
+**🇬🇧** For questions or support, contact: [giacomoleonemariadev@gmail.com](mailto:giacomoleonemariadev@gmail.com), or open as Issue on GitHub.
 
 ---
 
