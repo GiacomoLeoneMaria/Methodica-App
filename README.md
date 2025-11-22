@@ -21,7 +21,7 @@
 
 | Platform | Status |
 |----------|--------|
-| **iOS** | 🔄 Under review on App Store / In revisione su App Store |
+| **iOS** | ✅ Available / Disponibile su App Store |
 | **Android** | 🔄 Under review on Google Play Store / In revisione su Google Play Store |
 
 ---
