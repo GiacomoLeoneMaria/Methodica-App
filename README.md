@@ -21,7 +21,7 @@
 
 | Platform | Status |
 |----------|--------|
-| **iOS** | ✅ Available / Disponibile su App Store |
+| **iOS** | 🔄 Under review on App Store / In revisione su App Store |
 | **Android** | 🔄 Under review on Google Play Store / In revisione su Google Play Store |
 
 ---
@@ -65,6 +65,7 @@ Methodica is a complete mobile application for personal productivity management,
 **🇮🇹 Italiano:**
 - **CRUD Completo per Eventi**: Crea, modifica, visualizza ed elimina eventi
 - **Calendario Multi-Vista**: Visualizza eventi in modalità giornaliera (con timeline oraria), settimanale e mensile
+- **Vista Giornaliera Integrata**: La vista giornaliera mostra sia gli eventi che i task attivi in un'unica timeline, con gestione intelligente degli eventi sovrapposti e scroll automatico all'ora corrente
 - **Supporto Eventi Interi Giorni**: Supporto per eventi che durano l'intera giornata
 - **Riprogrammazione Automatica**: Gli eventi passati e non completati possono essere automaticamente riprogrammati al giorno corrente
 - **Promemoria Personalizzabili**: Imposta notifiche multiple per ogni evento (es. al momento dell'evento, 5 minuti prima, 1 ora prima, ecc.)
@@ -73,6 +74,7 @@ Methodica is a complete mobile application for personal productivity management,
 **🇬🇧 English:**
 - **Full CRUD for Events**: Create, edit, view, and delete events
 - **Multi-View Calendar**: View events in daily (with hourly timeline), weekly, and monthly modes
+- **Integrated Day View**: The day view displays both events and active tasks in a unified timeline, with intelligent overlap handling and auto-scroll to current time
 - **All-Day Event Support**: Support for events that last the entire day
 - **Automatic Rescheduling**: Past, uncompleted events can be automatically rescheduled to the current day
 - **Customizable Reminders**: Set multiple notifications for each event (e.g., at the time of the event, 5 minutes before, 1 hour before, etc.)
@@ -85,12 +87,16 @@ Methodica is a complete mobile application for personal productivity management,
 **🇮🇹 Italiano:**
 - **Bacheca Kanban**: Le attività sono organizzate in colonne (Backlog, In Progress, Review, Done) per una gestione visuale del workflow
 - **Dettagli Task**: Ogni task può avere una descrizione, priorità (alta, media, bassa), scadenza, icone, sub-task e tag
+- **Subtasks**: Ogni task può essere suddiviso in sottotask indipendenti con indicatori di progresso visivi (es. "2/5 completati") e barra di avanzamento
+- **Integrazione con Calendario**: I task attivi (In Progress e Review) vengono visualizzati automaticamente nella vista giornaliera del calendario insieme agli eventi
 - **Filtri Avanzati**: La vista Kanban può essere filtrata per "Area di Priorità", mostrando solo i task pertinenti
 - **Notifiche Giornaliere**: Promemoria quotidiani (mattina e sera) per i task attivi (In Progress e Review)
 
 **🇬🇧 English:**
 - **Kanban Board**: Tasks are organized into columns (Backlog, In Progress, Review, Done) for visual workflow management
 - **Task Details**: Each task can have a description, priority (high, medium, low), deadline, icons, sub-tasks, and tags
+- **Subtasks**: Each task can be broken down into independent subtasks with visual progress indicators (e.g., "2/5 completed") and progress bar
+- **Calendar Integration**: Active tasks (In Progress and Review) are automatically displayed in the calendar day view alongside events
 - **Advanced Filtering**: The Kanban view can be filtered by "Priority Area," showing only relevant tasks
 - **Daily Notifications**: Daily reminders (morning and evening) for active tasks (In Progress and Review)
 
@@ -199,10 +205,10 @@ Methodica is a complete mobile application for personal productivity management,
 ### Navigazione / Navigation
 
 **🇮🇹 Italiano:**
-- **React Navigation** (`@react-navigation/native`, `@react-navigation/bottom-tabs`): Per gestire la navigazione basata su tab (Tab Navigator) tra le schermate principali
+- **React Navigation** (`@react-navigation/native`, `@react-navigation/bottom-tabs`, `@react-navigation/native-stack`): Per gestire la navigazione basata su tab (Tab Navigator) e stack navigation tra le schermate principali
 
 **🇬🇧 English:**
-- **React Navigation** (`@react-navigation/native`, `@react-navigation/bottom-tabs`): To manage tab-based navigation (Tab Navigator) between main screens
+- **React Navigation** (`@react-navigation/native`, `@react-navigation/bottom-tabs`, `@react-navigation/native-stack`): To manage tab-based navigation (Tab Navigator) and stack navigation between main screens
 
 ---
 
@@ -222,8 +228,11 @@ Methodica is a complete mobile application for personal productivity management,
 - **React Native Core Components**: Componenti base per costruire l'interfaccia utente
 - **`@expo/vector-icons`**: Per una vasta libreria di icone personalizzabili
 - **`react-native-gesture-handler`**: Per gestire gesture complesse e interazioni touch
+- **`react-native-reanimated`**: Per animazioni fluide e performanti nell'interfaccia utente
 - **`react-native-safe-area-context`**: Per gestire correttamente i layout su dispositivi con notch e safe area
+- **`react-native-screens`**: Per ottimizzare le performance delle schermate native
 - **`react-native-calendars`**: Utilizzato per la vista calendario mensile
+- **`react-native-markdown-display`**: Per visualizzare contenuti formattati in Markdown
 - **`@react-native-community/slider`**: Per il componente slider utilizzato nella definizione delle percentuali delle aree
 - **`@react-native-community/datetimepicker`**: Per i picker nativi di data e ora
 - **`expo-linear-gradient`**: Per creare gradienti di colore in alcuni componenti UI
@@ -232,8 +241,11 @@ Methodica is a complete mobile application for personal productivity management,
 - **React Native Core Components**: Base components for building the user interface
 - **`@expo/vector-icons`**: For a vast library of customizable icons
 - **`react-native-gesture-handler`**: To handle complex gestures and touch interactions
+- **`react-native-reanimated`**: For smooth and performant animations in the user interface
 - **`react-native-safe-area-context`**: To properly manage layouts on devices with notch and safe area
+- **`react-native-screens`**: To optimize native screen performance
 - **`react-native-calendars`**: Used for the monthly calendar view
+- **`react-native-markdown-display`**: For displaying formatted Markdown content
 - **`@react-native-community/slider`**: For the slider component used in defining area percentages
 - **`@react-native-community/datetimepicker`**: For native date and time pickers
 - **`expo-linear-gradient`**: To create color gradients in some UI components
@@ -256,15 +268,21 @@ Methodica is a complete mobile application for personal productivity management,
 - **`expo-notifications`**: Per la gestione completa delle notifiche locali (richiesta permessi, scheduling, cancellazione)
 - **`expo-splash-screen`**: Per il controllo programmatico della splash screen
 - **`expo-localization`**: Per rilevare la lingua e le impostazioni regionali del dispositivo
-- **`expo-file-system/legacy`**: Per la gestione dei file (lettura, scrittura) utilizzato per l'export/import dei dati
-- **React Native Share API**: Per condividere i file di backup tramite il menu di condivisione nativo del sistema operativo
+- **`expo-file-system`**: Per la gestione dei file (lettura, scrittura) utilizzato per l'export/import dei dati
+- **`expo-document-picker`**: Per selezionare e importare documenti dal dispositivo
+- **`expo-image-picker`**: Per selezionare e caricare immagini dalla galleria o fotocamera
+- **`expo-sharing`**: Per condividere i file di backup tramite il menu di condivisione nativo del sistema operativo
+- **`expo-status-bar`**: Per controllare l'aspetto della status bar del sistema
 
 **🇬🇧 English:**
 - **`expo-notifications`**: For complete local notification management (permission requests, scheduling, cancellation)
 - **`expo-splash-screen`**: For programmatic control of the splash screen
 - **`expo-localization`**: To detect the device's language and regional settings
-- **`expo-file-system/legacy`**: For file management (reading, writing) used for data export/import
-- **React Native Share API**: To share backup files through the operating system's native share menu
+- **`expo-file-system`**: For file management (reading, writing) used for data export/import
+- **`expo-document-picker`**: To select and import documents from the device
+- **`expo-image-picker`**: To select and upload images from the gallery or camera
+- **`expo-sharing`**: To share backup files through the operating system's native share menu
+- **`expo-status-bar`**: To control the system status bar appearance
 
 ---
 
