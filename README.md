@@ -22,8 +22,8 @@
 
 | Platform | Status |
 |----------|--------|
-| **iOS (iPhone / iPad)** | ✅ Available on App Store / Disponibile su App Store (27 EU Countries or Regions In Review)|
-| **Android** | 🔄 Under review on Google Play Store / In revisione su Google Play Store |
+| **iOS (iPhone / iPad)** | ✅ Available on App Store|
+| **Android** | 🔄 Beta |
 
 ---
 <p align="center">
