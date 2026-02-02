@@ -22,7 +22,7 @@
 
 | Platform | Status |
 |----------|--------|
-| **iOS (iPhone / iPad)** | ✅ Available on App Store|
+| **iOS (iPhone / iPad)** [iOS link](https://apps.apple.com/it/app/methodica/id6755395671?l=en-GB)| ✅ Available on App Store|
 | **Android** | 🔄 Beta |
 
 ---
